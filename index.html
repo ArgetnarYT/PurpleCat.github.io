@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Cat</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #FF416C, #FF4B2B, #FF416C);
+            background-size: 200% 200%;
+            animation: gradientAnimation 5s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+
+        .container {
+            background-color: black;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        .marquee {
+            font-size: 22px;
+            color: white;
+            white-space: nowrap;
+            position: relative;
+            animation: marqueeAnimation 10s linear infinite;
+        }
+
+
+        @keyframes marqueeAnimation {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+
+        .title {
+            font-size: 48px;
+            color: #A020F0;
+            margin: 10px 0;
+        }
+
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #00CFFF;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00A3D1;
+        }
+
+
+        .telegram-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
+
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="marquee">Розыгрыши, ламповый чатик, заходи к нам!</div>
+    <h1 class="title">Purple Cat</h1>
+    <img src="https://cdn.discordapp.com/attachments/1079401889147400262/1303303910080909344/photo_2024-10-25_15-15-50.jpg?ex=672b43da&is=6729f25a&hm=0565ff6e1cbddba7c336adc0a784713fdc50265d14c298cf8a003266fa3105cc&" alt="Purple Cat Logo" class="logo">
+    <a href="https://t.me/+K9VY1-Nd42lmOGYy" class="button" target="_blank">
+        TELEGRAM CHANNEL
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon" class="telegram-icon">
+    </a>
+</div>
+</body>
+</html>
